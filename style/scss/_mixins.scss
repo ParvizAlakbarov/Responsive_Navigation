@@ -1,0 +1,30 @@
+@mixin navigation_buttons_same {
+    display: inline-block;
+    line-height: 45px;
+    border-radius: 5px ;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+@mixin pseudo_element_for_button($left, $top, $width, $height, $color) {
+    content: "";
+    position: absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+    border-radius: 5px;
+    background-color: $color;
+}
+
+
+
+
+
+
+
+
+
+
+
