@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1200px){
+    .navigation__login{
+        display: none !important;
+    }
+    nav{
+        .container{
+            width: 90%;
+        }
+    }
+    .navigation__responsive__main{
+        display: none !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 960px){
+
+    .navigation__tryItFree{
+        display: none !important;
+    }   
+
+    .navigation__main{
+        display: none !important;
+    }
+
+    .navigation__responsive{
+        display: flex !important;
+    }
+
+    .navigation__responsive__main{
+        display: block !important;
+    }
+
+    nav{
+        .container{
+            width: 85%;
+        }
+    }
+
+   body{
+       background-color: skyblue;
+   }
+}

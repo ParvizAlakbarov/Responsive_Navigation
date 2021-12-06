@@ -9,6 +9,46 @@
   text-align: start;
 }
 
+@media only screen and (max-width: 1200px) {
+  .navigation__login {
+    display: none !important;
+  }
+
+  nav .container {
+    width: 90%;
+  }
+
+  .navigation__responsive__main {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .navigation__tryItFree {
+    display: none !important;
+  }
+
+  .navigation__main {
+    display: none !important;
+  }
+
+  .navigation__responsive {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+
+  .navigation__responsive__main {
+    display: block !important;
+  }
+
+  nav .container {
+    width: 85%;
+  }
+
+  body {
+    background-color: skyblue;
+  }
+}
 :root {
   --topForTF: -45px;
   --leftForTF: -180px;
@@ -226,7 +266,7 @@ nav .container .navigation_responsive__list_item--dropdown_item {
 nav .container .navigation_responsive__list_item--dropdown_item a {
   display: inline-block;
   width: 100%;
-  color: #677294;
+  color: #677294 !important;
 }
 nav .container .navigation_responsive__list_item--dropdown_item a i {
   font-size: 20px;
@@ -239,8 +279,10 @@ nav .container .navigation_responsive__list_item .active {
 nav .container .navigation_responsive__list_link {
   display: inline-block;
   width: 100%;
+  color: #ff612f;
 }
 nav .container .navigation_responsive__list_link i {
+  color: #4a6f8a;
   float: right;
 }
 nav .container .navigation__tryItFree {
@@ -464,45 +506,4 @@ nav .container .navigation__responsive__login_link {
 }
 nav .container .navigation__responsive__login_link p {
   color: white;
-}
-
-@media only screen and (max-width: 1200px) {
-  .navigation__login {
-    display: none !important;
-  }
-
-  nav .container {
-    width: 90%;
-  }
-
-  .navigation__responsive__main {
-    display: none !important;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .navigation__tryItFree {
-    display: none !important;
-  }
-
-  .navigation__main {
-    display: none !important;
-  }
-
-  .navigation__responsive {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-  }
-
-  .navigation__responsive__main {
-    display: block !important;
-  }
-
-  nav .container {
-    width: 85%;
-  }
-
-  body {
-    background-color: skyblue;
-  }
 }

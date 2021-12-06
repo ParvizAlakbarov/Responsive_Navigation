@@ -2,7 +2,14 @@ let tryItFreeButton = document.querySelector('#tryItFreeAnchor');
 let loginButton = document.querySelector('#loginAnchor');
 
 tryItFreeButton.addEventListener('mouseenter',function(e) {
-    document.documentElement.style.setProperty('--leftForTF',`${e.clientX-(window.innerWidth*0.82)}px`);
+    if (window.innerWidth<1200) {
+        console.log("asdfasd")
+        document.documentElement.style.setProperty('--leftForTF',`${e.clientX-(window.innerWidth*0.9)}px`);
+    }
+    else{
+        document.documentElement.style.setProperty('--leftForTF',`${e.clientX-(window.innerWidth*0.82)}px`);
+
+    }
     document.documentElement.style.setProperty('--topForTF',`${e.clientY-67}px`);
 })
 
